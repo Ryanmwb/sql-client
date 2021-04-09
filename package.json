@@ -1,0 +1,35 @@
+{
+  "name": "sql-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ryanmwb/sql-client.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ryanmwb/sql-client/issues"
+  },
+  "homepage": "https://github.com/Ryanmwb/sql-client#readme",
+  "dependencies": {
+    "axios": "0.21.1",
+    "concurrently": "6.0.1",
+    "cors": "2.8.5",
+    "dotenv": "8.2.0",
+    "express": "4.17.1",
+    "morgan": "^1.10.0",
+    "path": "0.12.7",
+    "pg": "8.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
