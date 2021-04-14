@@ -1,4 +1,4 @@
-import { get, startCase } from "lodash";
+import { get, isEmpty, startCase } from "lodash";
 import PropTypes from "prop-types";
 import { useForm } from "react-hook-form";
 import { connect } from "react-redux";
@@ -60,24 +60,13 @@ export const Home = ({ setCredentials, setSelectedTable, setTables }) => {
       {inputGroup({ label: "host", type: "text" })}
       {inputGroup({ label: "port", type: "number" })}
       {inputGroup({ label: "user", type: "text" })}
-      {inputGroup({ label: "password", type: "text" })}
+      {inputGroup({ label: "password", type: "password" })}
       {inputGroup({ label: "database", type: "text" })}
       <div css={styles.inputGroup}>
         <button
-          // disabled={!isEmpty(errors) || isEmpty(touchedFields)}
+          disabled={!isEmpty(errors) || isEmpty(touchedFields)}
           className="btn btn-primary"
           type="submit"
-          // onClick={
-          //   async () =>
-          //     await submit({
-          //       user: "hwtnuoidtpgenv",
-          //       host: "ec2-52-71-231-180.compute-1.amazonaws.com",
-          //       database: "d4heqcdvgoekek",
-          //       password:
-          //         "ae18a7bced35209519feea5e5ef4da319c926b03f7b764dcfc078fab3c2d504b",
-          //       port: 5432,
-          //     })
-          // }
         >
           Connect
         </button>
