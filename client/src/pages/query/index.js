@@ -45,8 +45,6 @@ export const Query = ({
         setCredentials,
       });
 
-      console.log({ queryRes });
-
       if (isArray(queryRes)) {
         setQueryTables(queryRes);
       } else if (isObject(queryRes)) {
@@ -58,8 +56,6 @@ export const Query = ({
       setValue("query", "");
 
       toast.success("Query was successful!");
-
-      console.log({ queryRes });
     } catch (error) {
       toast.error(get(error, "message", "Connection failed"));
     }
@@ -126,7 +122,6 @@ export const Query = ({
           {queryTables
             .filter((qt) => get(qt, "command", "") === "SELECT")
             .map((qt, i) => {
-              console.log({ qt });
               return (
                 <>
                   SELECT Result #{i + 1}

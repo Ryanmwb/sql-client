@@ -62,7 +62,7 @@ router.post("/query", async (req, res, next) => {
     await client.end();
     return res.status(200).json(queryRes);
   } catch (error) {
-    console.log("error", error);
+    console.log({ error });
     return res.status(400).json(error);
   }
 });
