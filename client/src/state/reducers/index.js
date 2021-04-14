@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
-import countReducer from "./count-reducer";
+import tablesReducer from "./tables-reducer";
 
 export default combineReducers({
-  count: countReducer,
+  database: tablesReducer,
 });

@@ -1,1 +1,1 @@
-export * from "./count-actions";
+export * from "./tables-action";

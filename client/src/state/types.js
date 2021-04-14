@@ -1,1 +1,4 @@
-export const INCREMENT = "INCREMENT";
+export const SET_CREDENTIALS = "SET_CREDENTIALS";
+export const SET_SELECTED_TABLE = "SET_SELECTED_TABLE";
+export const SET_QUERY_TABLES = "SET_QUERY_TABLES";
+export const SET_TABLES = "SET_TABLES";

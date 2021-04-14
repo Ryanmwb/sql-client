@@ -10,10 +10,20 @@ export const styles = {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: lightgray;
+    background: #f8f8ff;
+  `,
+  title: (theme) => css`
+    font-size: 2rem;
   `,
   input: (theme) => css`
     display: block;
     font-size: 1rem;
+  `,
+  inputGroup: (theme) => css`
+    margin-top: 1rem;
+  `,
+  error: (theme) => css`
+    font-size: 0.75rem;
+    color: red;
   `,
 };
